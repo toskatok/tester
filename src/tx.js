@@ -15,6 +15,10 @@ module.exports = function (options) {
     console.log(client.hash)
   })
 
+  client.on('log', () => {
+    console.log('sending logs...')
+  })
+
   let t = client.addThing('1', '.bamboo.tester')
   setInterval(() => {
     t.log({
