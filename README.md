@@ -1,6 +1,9 @@
 # Bamboo Tester
 > Set Bamboo on Fire :joy:
 
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+
+![bamboo](https://img.shields.io/badge/bambil-bamboo-orange.svg?style=flat-square)
 
 ## Introduction
 Sometimes we tell lies, sometimes we prove we don't lie. Let's prove ourselves.
