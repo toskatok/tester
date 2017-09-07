@@ -9,7 +9,7 @@
  */
 const bamboo = require('@ibamboo/rpi.js')
 
-module.exports = function (options) {
+module.exports = function (options, callback) {
   const client = new bamboo.BambooClient(`mqtt://${options.host}:${options.port}`, 'bamboo', 'Tester')
   client.on('ready', () => {
     console.log(client.hash)
@@ -24,5 +24,6 @@ module.exports = function (options) {
     t.log({
       sendTime: Date.now()
     })
+    callback()
   }, options.interval)
 }
