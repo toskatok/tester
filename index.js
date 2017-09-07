@@ -22,13 +22,14 @@ if (cluster.isMaster) {
   }
 
   process.on('SIGINT', () => {
+    console.log()
     console.log(`** ${chalk.rgb(0, 255, 127)('Bamboo Tester')} Result **`)
 
     for (let component in components) {
       console.log(`> ${chalk.rgb(255, 255, 102)(component)}: ${chalk.rgb(246, 105, 134)(components[component])}`)
     }
 
-    console.log(logs)
+    console.log(`> Total: ${chalk.rgb(246, 105, 134)(logs)}`)
     process.exit()
   })
 
