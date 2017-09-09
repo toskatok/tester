@@ -9,6 +9,23 @@
 Sometimes we tell lies, sometimes we prove we don't lie. Let's prove ourselves.
 
 ## Tests
+### Environment
+
+> VM configuration
+
+| vCPU | Memory |
+|:----:|:------:|
+| 6    | 12Gb   |
+
+> Nodes
+
+| Nodes | Status  |
+|:-----:|:------- |
+| 1000  | Fail    |
+| 500   | Fail    |
+| 50    | Success |
+
+
 ### Load Balancing
 Tests load balancing, which is provided by Bamboo connectivity, between components.
 
